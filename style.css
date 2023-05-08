@@ -1,0 +1,26 @@
+body{
+    font-family: Arial;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.instrucoes{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.texto{
+    font-size: 1.2rem;
+    background-color: #f3f3f3;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+}
