@@ -24,3 +24,28 @@ h1{
     padding: 1.2rem;
     margin-bottom: 1rem;
 }
+
+.entrada{
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.resultado{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+button{
+    font-size: 1rem;
+    padding: .6rem 1.2rem;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: .3s;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
