@@ -1,0 +1,6 @@
+const texto = document.querySelector(".texto")
+const entrada = document.querySelector(".entrada")
+const reiniciar = document.querySelector(".reiniciar")
+const resultado = document.querySelector(".resultado")
+const historico = document.querySelector(".historico")
+const alternarTema = document.querySelector(".alternarTema")
