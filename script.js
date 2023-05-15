@@ -3,7 +3,7 @@ const entrada = document.querySelector(".entrada")
 const reiniciar = document.querySelector(".reiniciar")
 const resultado = document.querySelector(".resultado")
 const historico = document.querySelector(".historico")
-const alternarTema = document.querySelector(".alternarTema")
+const alternarTemaBtn = document.querySelector(".alternarTema")
 
 
 const textos = [
@@ -13,3 +13,11 @@ const textos = [
     "Digite isso.",
     "Você pode digitar isso aqui.",
 ];
+
+function novoTexto(){
+    const index = Math.floor(Math.random() * textos.length);
+    texto.textContent = textos[index];
+}
+
+
+novoTexto();
