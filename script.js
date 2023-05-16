@@ -27,7 +27,7 @@ function atualizarTeste(){
 
     if( entradaString === textoString){
         console.log("As strings são iguais.");
-    //    verificar();
+        verificar();
     }
 }
 
