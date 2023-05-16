@@ -21,17 +21,40 @@ function novoTexto(){
 
 function atualizarTeste(){
     iniciar();
+
+    const entradaString = entrada.value;
+    const textoString = texto.value
+
+    if( entradaString === textoString){
+        console.log("As strings são iguais.");
+    //    verificar();
+    }
 }
 
 function iniciar(){
-
     const statusDoTeste = JSON.parse(localStorage.getItem("testeEmAndamento"));
 
     if(!statusDoTeste){
-        localStorage.setItem("tempoInicial", new Date.getTime());
+        localStorage.setItem("tempoInicial", new Date().getTime());
         localStorage.setItem("testeEmAndamento", true);
     }   
 }
+
+function verificar(){
+    const tempoFinal = new Date().getTime();
+    const tempoInicial = parse(localStorage.getItem("tempoInicial"));
+    const tempoGasto = ((tempoFinal - tempoInicial) / 1000);
+
+    resultado.textContent = 'Parabéns! Você levou ${tempoGasto} segundos!';
+
+    localStorage.setItem("testeEmAndamento", false);
+    entrada.value = "";
+    novoTexto();
+}
+
+
+
+
 
 
 entrada.addEventListener("keyup", atualizarTeste);
