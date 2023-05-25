@@ -10,8 +10,6 @@ const textos = [
     "Exemplo de texto para digitar.",
     "Outro exemplo de texto para digitar.",
     "Mais um exemplo de texto para digitar.",
-    "Digite isso.",
-    "Você pode digitar isso aqui.",
 ];
 
 function novoTexto(){
